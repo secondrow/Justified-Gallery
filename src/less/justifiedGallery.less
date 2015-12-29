@@ -35,7 +35,7 @@
 @-o-keyframes justified-gallery-show-entry-animation {.show-entry-frame};
 @keyframes justified-gallery-show-entry-animation {.show-entry-frame};
 
-.justified-gallery { 
+.justified-gallery {
 	width: 100%;
 	position: relative;
 	overflow: hidden;
@@ -49,8 +49,8 @@
 
 		> img, > a > img {
 			position: absolute;
-			top: 50%; 
-			left: 50%; 
+			top: 50%;
+			left: 50%;
 			margin: 0;
 			padding: 0;
 			border: none;
@@ -85,6 +85,21 @@
 			.animation(justified-gallery-show-caption-animation, @caption-animation-duration);
 		}
 
+	}
+
+	> figure {
+		margin: 0;
+		position: absolute;
+		display: inline-block;
+		overflow: hidden;
+		opacity: 0;
+		filter: e("alpha(opacity=0)"); /* IE8 or Earlier */
+		> a > img {
+			position: absolute;
+			margin: 0;
+			padding: 0;
+			border: none;
+		}
 	}
 
 	> .entry-visible {

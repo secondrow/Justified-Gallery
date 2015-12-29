@@ -118,6 +118,21 @@
   -moz-animation: justified-gallery-show-caption-animation 500ms 0 ease;
   -ms-animation: justified-gallery-show-caption-animation 500ms 0 ease;
 }
+.justified-gallery > figure {
+  margin: 0;
+  position: absolute;
+  display: inline-block;
+  overflow: hidden;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  /* IE8 or Earlier */
+}
+.justified-gallery > figure > a > img {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
 .justified-gallery > .entry-visible {
   opacity: 1.0;
   filter: alpha(opacity=100);
